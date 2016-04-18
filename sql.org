@@ -1,0 +1,41 @@
+#+begin_src sql
+DELIMITER $$
+DROP PROCEDURE IF EXISTS get_distinct_counts$$
+CREATE PROCEDURE get_distinct_counts()
+BEGIN
+DECLARE x  INT;
+
+SET x = 0;
+CREATE TEMPORARY TABLE counts LIKE snapshot_log;
+WHILE x < 100 DO
+INSERT INTO counts
+(SELECT * FROM snapshot_log WHERE people_count =
+(SELECT MAX(people_count) FROM snapshot_log) - x ORDER BY id LIMIT 1);
+SET x = x + 1;
+END WHILE;
+SELECT * FROM counts;
+DROP TEMPORARY TABLE counts;
+END$$
+DELIMITER ;
+#+end_src
+
+#+begin_src sql
+DELIMITER $$
+DROP PROCEDURE IF EXISTS get_distinct_counts$$
+CREATE PROCEDURE get_distinct_counts()
+BEGIN
+DECLARE x  INT;
+
+SET x = 0;
+CREATE TEMPORARY TABLE counts LIKE snapshot_log;
+WHILE x < 100 DO
+INSERT INTO counts
+(SELECT * FROM snapshot_log WHERE count =
+(SELECT MAX(count) FROM snapshot_log) - x ORDER BY id LIMIT 1);
+SET x = x + 1;
+END WHILE;
+SELECT * FROM counts;
+DROP TEMPORARY TABLE counts;
+END$$
+DELIMITER ;
+#+end_src
