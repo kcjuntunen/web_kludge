@@ -52,18 +52,6 @@ EOF;
             echo " </tr>\n";
         }
     }
-    // $d = strtotime($stuffsplit[1]) - (4 * 60 *60);
-    // $draw = 'Closed';
-    // if ($stuffsplit[3] > 0) $draw = 'Open';
-    // echo " <th scope='row'>Display Case</th> \n";
-    // echo "  <td>" . date('Y-m-d H:i:s', $d) . "</td> \n";
-    // echo "  <td>" . $stuffsplit[5] . "</td> \n";
-    // echo "  <td>" . number_format($stuffsplit[7], 2) . "</td> \n";
-    // echo "  <td>" . $stuffsplit[6] . "</td> \n";
-    // echo "  <td>" . $stuffsplit[8] . "</td> \n";
-    // echo "  <td>" . $stuffsplit[9] / 1000.0 . "</td> \n";
-    // echo "  <td>" . $draw . "</td> \n";
-    // echo " </tr>";
     echo "</table>\n";
 	    
     $db_pi1->close();
