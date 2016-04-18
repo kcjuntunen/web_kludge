@@ -11,9 +11,7 @@
     <h1>Amstore Smart Fixtures</h1>
     <div class="container_12">
       <div class="grid_1"> </div>
-      <div class="grid_11">
-	<div id="load_status"><br></div>
-      </div>
+      <div class="grid_12" id="load_status"></div>
       <div class="clear"></div>
       <!-- Thingspeak chart -->
       <div class="grid_6">
