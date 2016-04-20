@@ -33,16 +33,16 @@ function loadData2() {
 	    var count2 = data[0]["people_count"];
 	    $("#count1").text(truncate(count1));
 	    $("#count2").text(truncate(count2));
-	    var draw1 = "Closed";
-	    var draw2 = "Closed";
+	    var draw1 = '<div class="transbox"><p>Closed</p></div>';
+	    var draw2 = '<div class="transbox"><p>Closed</p></div>';
 	    if (data[1]["reed_switch1"] > 0) {
-		draw1 = "Open";
+		draw1 = '<div class="darkbox"><p>Open</p></div>';
 	    }
 	    if (data[0]["reed_switch2"] > 0) {
-		draw1 = "Open";
+		draw2 = '<div class="darkbox"><p>Open</p></div>';
 	    }
-	    $("#draw1").text(draw1);
-	    $("#draw2").text(draw2);
+	    $("#draw1").html(draw1);
+	    $("#draw2").html(draw2);
 	}
     });
 }

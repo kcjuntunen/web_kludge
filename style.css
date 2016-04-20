@@ -57,7 +57,8 @@ table tr {
     /* padding-left:20px; */
     background-image: url("lines.png");
     background-repeat: no-repeat;
-    background-position: 50% 28%;
+    background-repeat-x: repeat;
+    background-position: 50% 50%;
 }
 table td:first-child {
     text-align: left;
@@ -118,6 +119,7 @@ body {
 
 h1 {
     font-family:Arial, Helvetica, sans-serif;
+    color: #666;
     font-weight: normal;
     padding-top: 20px;
     text-align: center;
@@ -154,28 +156,53 @@ h1 {
   text-shadow: 1px 1px 0px #fff;
 }
 
-.drawerpos {
+.drawclosed {
   font-family:Arial, Helvetica, sans-serif;
-  color:#666;
+  color: #fff;
   font-size:128px;
-  text-shadow: 1px 1px 0px #fff;
+  text-shadow: 1px 1px 0px #666;
+}
+
+.drawopen {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#fff;
+  font-size:128px;
+  text-shadow: 1px 1px 0px #666;
 }
 
 div.transbox {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:110px;
+    text-align: 50% 50%;
     margin: 30px;
     background-color: #ffffff;
     border: 1px solid black;
-    /* opacity: 0.6; */
 }
 
 div.transbox p {
     margin: 5%;
-    font-weight: bold;
     color: #000000;
+    text-shadow: 1px 1px 0px #000;
+}
+
+div.darkbox {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:110px;
+    text-align: 50% 50%;
+    margin: 30px;
+    background-color: #000;
+    border: 1px solid black;
+}
+
+div.darkbox p {
+    margin: 5%;
+    color:#fff;
+    text-shadow: 1px 1px 0px #000;
 }
 
 .rowhead {
     background-image: url("lines.png");
     background-repeat: no-repeat;
-    background-position: 50% 28%;
+    background-repeat-x: repeat;
+    background-position: 50% 50%;
 }
