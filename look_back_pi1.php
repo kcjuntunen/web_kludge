@@ -8,7 +8,7 @@
  </head>
   
  <body>
-  <h1><a href='index.php'>Office</a></h1>
+  <h1><a href='index.html'>Office</a></h1>
   <div class="container_12">
   <div class="grid_1"> </div>
   <div class="grid_11">
