@@ -2,11 +2,11 @@
  <head>
   <title>Amstore Smart Fixtures</title>
   <link rel="stylesheet" href="code/css/960.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tablestyle.css">
   <style>
   </style>
  </head>
-  
+
  <body>
   <h1><a href='index.html'>Office</a></h1>
   <div class="container_12">
@@ -26,7 +26,7 @@ if(!$db_pi1) {
 $sql =<<<EOF
 CALL get_distinct_counts();
 EOF;
-    
+
     $ret = $db_pi1->query($sql);
     echo "<table>";
     //    echo " <th></th>\n";
@@ -51,7 +51,7 @@ EOF;
         echo "  <td>" . $draw . "</td> \n";
         echo " </tr>\n";
     }
-	    
+
     $db_pi1->close();
 }
 ?>
