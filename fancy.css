@@ -1,0 +1,81 @@
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+    font-family:Arial, Helvetica, sans-serif;
+    /* Giving a display value to the HTML5 rendered elements: */
+    display:block;
+}
+
+article .line{
+    /* The dividing line inside of the article is darker: */
+    background-color:#15242a;
+    border-bottom-color:#204656;
+    margin:1.3em 0;
+}
+
+footer .line{
+    margin:2em 0;
+}
+
+nav{
+    background:url(gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+    padding:0 5px;
+    position:absolute;
+    left:0;
+    top:4;
+
+    border:1px solid #FCFCFC;
+
+    -moz-box-shadow:0 1px 1px #333333;
+    -webkit-box-shadow:0 1px 1px #333333;
+    box-shadow:0 1px 1px #333333;
+}
+
+nav ul li{
+    display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+    color:#999;
+    display:block;
+    float:left;
+    font-size:1.25em;
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-shadow:0 1px 1px white;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color:#f0f0f0;
+    text-decoration: underline;
+}
+
+nav, article, nav ul li a,figure{
+    /* Applying CSS3 rounded corners: */
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+h1 {
+    background:url(gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+    padding:0 5px;
+    /* position:absolute; */
+    /* left:0; */
+    /* top:4; */
+
+    border:1px solid #FCFCFC;
+    
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    
+    -moz-box-shadow:0 1px 1px #333333;
+    -webkit-box-shadow:0 1px 1px #333333;
+    box-shadow:0 1px 1px #333333;
+}
