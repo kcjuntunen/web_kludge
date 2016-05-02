@@ -22,7 +22,7 @@ if ($socket === false) {
     // echo "OK.\n";
 }
 
-echo "Attempting to connect to '$address' on port '$service_port'...";
+// echo "Attempting to connect to '$address' on port '$service_port'...";
 $result = socket_connect($socket, $address, $service_port);
 if ($result === false) {
     echo "socket_connect() failed.\nReason: ($result) " . socket_strerror(socket_last_error($socket)) . "\n";
@@ -42,8 +42,8 @@ socket_write($socket, $in, strlen($in));
 
 // echo "Reading response:\n\n";
 while ($out = socket_read ($socket, 2048)) {
-    $sql = "SELECT * FROM rfid_tags WHERE hexid = CONV('" .
-         substr($out, 0, -1)  . "', 16, 2);";
+    $sql = "SELECT * FROM rfid_tags WHERE hexid = '" .
+         substr($out, 0, -1)  . "';";
 }
     // echo $out;
 
@@ -65,12 +65,12 @@ $db_pi1 = new mysqli($config->{'host'}, $config->{'login'},
 if(!$db_pi1) {
     echo $db_pi1->lastErrorMsg();
 } else {
-    echo "\nSQL: " . $sql . "\n";
+    // echo "\nSQL: " . $sql . "\n";
     $res = $db_pi1->query($sql);
     // echo "Res: " . $res . "\n";
-    echo "--------------------------------------------------------------------\n";
+    // echo "--------------------------------------------------------------------\n";
     while ($row = $res->fetch_assoc()) {
-        echo $row["link"];
+        echo $row["embed"], "\n";
     }
 }
 ?>
