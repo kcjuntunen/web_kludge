@@ -4,17 +4,8 @@
         <title>Amstore Smart Fixtures</title>
         <link rel="stylesheet" href="code/css/960.css">
         <link rel="stylesheet" href="style.css">
-        <style>
-         article, aside, figure, footer, header, hgroup, menu, nav, section
-         { display: block; }
-         header {
-             font-family:Arial, Helvetica, sans-serif;
-             color: #666;
-             font-weight: normal;
-             padding-top: 20px;
-             text-align: center;
-         }
-        </style>
+        <link rel="stylesheet" href="fancy.css">
+        <style></style>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -23,59 +14,59 @@
             <h1>Amstore Smart Fixtures</h1>
         </header>
         <article>
-        <div class="container_12">
-            <!-- Thingspeak chart -->
-            <table style= "border-collapse: collapse;">
-                <th></th>
-                <th class="columnhead">Upstairs Demo Area</th>
-                <th class="columnhead">Office</th>
-                <tr>
-                    <th scope="row" class="rowhead">
-                        <img src="temp.png" style="position:relative; left:-25px" height="180" width="180">
-                    </th>
-                    <td>
-                        <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100093/charts/5?bgcolor=%23ffffff&color=%23202020&days=1&dynamic=true&average=240&type=spline"></iframe></td>
-                    <td>
-                        <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100117/charts/6?bgcolor=%23ffffff&color=%23202020&days=2&dynamic=true&average=240&type=spline"></iframe></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="rowhead">
-                        <img src="person.png" style="position:relative; left:-25px" height="180" width="180">
-                    </th>
-                    <td><div class="transbox">
-                        <p class="peoplecount" id="count1"></p>
-                    </div>
-                    </td>
-                    <td><div class="transbox">
-                        <p class="peoplecount" id="count2"></p>
-                    </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row" class="rowhead">
-                        <img src="bulb.png" style="position:relative; left:-25px" height="180" width="180">
-                    </th>
-                    <td>
-                        <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100093/charts/3?bgcolor=%23ffffff&color=%23202020&days=1&dynamic=true&average=240&type=spline"></iframe></td>
-                    <td>
-                        <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100117/charts/4?bgcolor=%23ffffff&color=%23202020&days=2&dynamic=true&average=240&type=spline"></iframe></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="rowhead">
-                        <img src="counter.png" style="position:relative; left:-25px" height="180" width="180">
-                    </th>
-                    <td id="draw1"></td>
-                    <td id="draw2"></td>
-                </tr>
-            </table>
-            <div class="clear"></div>
-        </div> <!-- container_12 -->
+            <div class="container_12">
+                <!-- Thingspeak chart -->
+                <table style= "border-collapse: collapse;">
+                    <th></th>
+                    <th class="columnhead">Upstairs Demo Area</th>
+                    <th class="columnhead">Office</th>
+                    <tr>
+                        <th scope="row" class="rowhead">
+                            <img src="temp.png" style="position:relative; left:-25px" height="180" width="180">
+                        </th>
+                        <td>
+                            <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100093/charts/5?bgcolor=%23ffffff&color=%23202020&days=1&dynamic=true&average=240&type=spline"></iframe></td>
+                        <td>
+                            <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100117/charts/6?bgcolor=%23ffffff&color=%23202020&days=2&dynamic=true&average=240&type=spline"></iframe></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="rowhead">
+                            <img src="person.png" style="position:relative; left:-25px" height="180" width="180">
+                        </th>
+                        <td><div class="transbox">
+                            <p class="peoplecount" id="count1"></p>
+                        </div>
+                        </td>
+                        <td><div class="transbox">
+                            <p class="peoplecount" id="count2"></p>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="rowhead">
+                            <img src="bulb.png" style="position:relative; left:-25px" height="180" width="180">
+                        </th>
+                        <td>
+                            <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100093/charts/3?bgcolor=%23ffffff&color=%23202020&days=1&dynamic=true&average=240&type=spline"></iframe></td>
+                        <td>
+                            <iframe width="450" height="260" style="border: 1px solid #111111;" src="https://thingspeak.com/channels/100117/charts/4?bgcolor=%23ffffff&color=%23202020&days=2&dynamic=true&average=240&type=spline"></iframe></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="rowhead">
+                            <img src="counter.png" style="position:relative; left:-25px" height="180" width="180">
+                        </th>
+                        <td id="draw1"></td>
+                        <td id="draw2"></td>
+                    </tr>
+                </table>
+                <div class="clear"></div>
+            </div> <!-- container_12 -->
         </article>
         <nav>
-        <div class="container_16">
-            <a href="tableview.html">Table View</a>
-            <a href="rfid.html">RFID Viewer</a>
-        </div> <!-- container_16 -->
+            <ul>
+                <li><a href="tableview.html">Table View</a></li>
+                <li><a href="rfid.html">RFID Viewer</a></li>
+            </ul>
         </nav>
     </body>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

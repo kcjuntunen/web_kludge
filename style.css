@@ -12,7 +12,7 @@ table a:active,
 table a:hover {
     /* color: #bd5a35; */
     opacity: 0.0;
-    text-decoration:underline;
+    text-decoration: none;
 }
 table {
     font-family:Arial, Helvetica, sans-serif;
@@ -119,6 +119,7 @@ body {
 
 h1 {
     font-family:Arial, Helvetica, sans-serif;
+    background:url(gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
     color: #666;
     font-weight: normal;
     padding-top: 20px;
@@ -138,36 +139,36 @@ h1 {
     padding-bottom: 10px;
 }
 .container_12 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
 }
 
 .container_16 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
 }
 
 .peoplecount {
-  font-family:Arial, Helvetica, sans-serif;
-  color:#666;
-  font-size:128px;
-  text-shadow: 1px 1px 0px #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    font-size:128px;
+    text-shadow: 1px 1px 0px #fff;
 }
 
 .drawclosed {
-  font-family:Arial, Helvetica, sans-serif;
-  color: #fff;
-  font-size:128px;
-  text-shadow: 1px 1px 0px #666;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size:128px;
+    text-shadow: 1px 1px 0px #666;
 }
 
 .drawopen {
-  font-family:Arial, Helvetica, sans-serif;
-  color:#fff;
-  font-size:128px;
-  text-shadow: 1px 1px 0px #666;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    font-size:128px;
+    text-shadow: 1px 1px 0px #666;
 }
 
 div.transbox {
@@ -205,4 +206,15 @@ div.darkbox p {
     background-repeat: no-repeat;
     background-repeat-x: repeat;
     background-position: 50% 50%;
+}
+
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 17px;
+    font-weight: normal;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    text-decoration:none;
 }

@@ -3,6 +3,7 @@
   <title>Amstore Smart Fixtures</title>
   <link rel="stylesheet" href="code/css/960.css">
   <link rel="stylesheet" href="tablestyle.css">
+  <link rel="stylesheet" href="fancy.css">
   <style>
   </style>
  </head>
