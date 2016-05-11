@@ -213,7 +213,7 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
     color: #666;
     font-size: 17px;
     font-weight: normal;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: center;
     display: block;
     text-decoration:none;

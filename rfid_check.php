@@ -8,13 +8,9 @@ error_reporting(E_ALL);
 
 // echo "<h2>TCP/IP Connection</h2>\n";
 
-/* Get the port for the WWW service. */
-$service_port = 8080; // getservbyname('www', 'tcp');
+$service_port = 8080;
+$address = '10.10.55.183';
 
-/* Get the IP address for the target host. */
-$address = '10.10.55.192'; // gethostbyname('www.example.com');
-
-/* Create a TCP/IP socket. */
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if ($socket === false) {
     echo "socket_create() failed: reason: " . socket_strerror(socket_last_error()) . "\n";
